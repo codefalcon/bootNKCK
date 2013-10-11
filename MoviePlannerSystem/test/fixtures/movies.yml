@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  date: 2013-10-11 18:17:23
+  location: MyString
+  booked_status: 
+  language: MyString
+  link: MyString
+
+two:
+  name: MyString
+  date: 2013-10-11 18:17:23
+  location: MyString
+  booked_status: 
+  language: MyString
+  link: MyString
