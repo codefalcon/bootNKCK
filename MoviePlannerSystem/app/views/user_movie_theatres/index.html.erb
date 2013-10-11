@@ -1,0 +1,25 @@
+<h1>Listing user_movie_theatres</h1>
+
+<table>
+  <tr>
+    <th>User movie</th>
+    <th>Movie theatre</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_movie_theatres.each do |user_movie_theatre| %>
+  <tr>
+    <td><%= user_movie_theatre.user_movie %></td>
+    <td><%= user_movie_theatre.movie_theatre %></td>
+    <td><%= link_to 'Show', user_movie_theatre %></td>
+    <td><%= link_to 'Edit', edit_user_movie_theatre_path(user_movie_theatre) %></td>
+    <td><%= link_to 'Destroy', user_movie_theatre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User movie theatre', new_user_movie_theatre_path %>

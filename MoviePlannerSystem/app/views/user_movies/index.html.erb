@@ -1,0 +1,27 @@
+<h1>Listing user_movies</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Movie</th>
+    <th>Response</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_movies.each do |user_movie| %>
+  <tr>
+    <td><%= user_movie.user %></td>
+    <td><%= user_movie.movie %></td>
+    <td><%= user_movie.response %></td>
+    <td><%= link_to 'Show', user_movie %></td>
+    <td><%= link_to 'Edit', edit_user_movie_path(user_movie) %></td>
+    <td><%= link_to 'Destroy', user_movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User movie', new_user_movie_path %>
