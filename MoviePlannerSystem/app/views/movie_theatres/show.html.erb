@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Movie:</b>
+  <%= @movie_theatre.movie %>
+</p>
+
+<p>
+  <b>Theatre:</b>
+  <%= @movie_theatre.theatre %>
+</p>
+
+
+<%= link_to 'Edit', edit_movie_theatre_path(@movie_theatre) %> |
+<%= link_to 'Back', movie_theatres_path %>

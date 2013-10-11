@@ -1,4 +1,22 @@
 MoviePlannerSystem::Application.routes.draw do
+  resources :user_infos
+
+
+  resources :user_movie_theatres
+
+
+  resources :movie_theatres
+
+
+  resources :theatres
+
+
+  resources :user_movies
+
+
+  resources :movies
+
+
   root :to=>"home#index"
 
   devise_for :users
