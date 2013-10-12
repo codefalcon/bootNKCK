@@ -15,10 +15,15 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :date %><br />
-    <%= f.datetime_select :date %>
-  </div>
+   <div class="field">
+   	 <%= f.label :date %><br />
+	  <div id="datetimepicker2" class="input-append">
+    	<input data-format="MM/dd/yyyy HH:mm:ss PP" type="text"></input>
+	    <span class="add-on">
+	      <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+	    </span>
+	  </div>
+	</div>
   <div class="field">
     <%= f.label :location %><br />
     <%= f.text_field :location %>
