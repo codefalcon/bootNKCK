@@ -13,18 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20131011131930) do
 
-  create_table "audiences", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "password"
-    t.text     "Bank_Details"
-    t.string   "phone"
-    t.string   "location"
-    t.string   "preferted_genre"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
-
   create_table "movie_theatres", :force => true do |t|
     t.integer  "movie_id"
     t.integer  "theatre_id"
